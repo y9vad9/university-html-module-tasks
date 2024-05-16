@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклади мультимедіа та графіки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        video, audio {
+            width: 100%;
+        }
+
+        #map {
+            position: relative;
+        }
+
+        #map img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #map .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        canvas {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+
+        #svg-container {
+            margin: 20px auto;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<h2>Вставка відео та аудіо:</h2>
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<h2>Фонове відео:</h2>
+<video autoplay muted loop id="background-video">
+    <source src="background-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<h2>Вставка звуку:</h2>
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+
+<h2>Карта з посиланнями на різні частини зображення:</h2>
+<div id="map">
+    <img src="image.webp" width="200px" height="200px" alt="Карта" usemap="#image-map">
+    <map name="image-map">
+        <area shape="rect" coords="0,0,100,100" href="top-left.html" alt="Top Left">
+        <area shape="rect" coords="100,0,200,100" href="top-right.html" alt="Top Right">
+        <area shape="rect" coords="0,100,100,200" href="bottom-left.html" alt="Bottom Left">
+        <area shape="rect" coords="100,100,200,200" href="bottom-right.html" alt="Bottom Right">
+    </map>
+</div>
+
+<h2>Canvas у JavaScript:</h2>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<h2>SVG:</h2>
+<div id="svg-container">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+</div>
+
+<script>
+    // JavaScript для Canvas
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, 150, 80);
+
+    // JavaScript для SVG
+    var svgContainer = document.getElementById('svg-container');
+    var svgNS = 'http://www.w3.org/2000/svg';
+    var circle = document.createElementNS(svgNS, 'circle');
+    circle.setAttribute('cx', 50);
+    circle.setAttribute('cy', 50);
+    circle.setAttribute('r', 30);
+    circle.setAttribute('fill', 'blue');
+    svgContainer.appendChild(circle);
+</script>
+</body>
+</html>

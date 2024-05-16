@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивний дизайн і форматування тексту</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Адаптивний дизайн для мобільних пристроїв */
+        @media only screen and (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Адаптивний дизайн і форматування тексту</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Контакти</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Цитата з відомого джерела:</h2>
+    <blockquote>
+        <p><q>Життя - це те, що з вами відбувається, поки ви зайняті іншими планами.</q> - Джон Леннон</p>
+    </blockquote>
+
+    <h2>Список іменованих скорочень:</h2>
+    <p><abbr title="HyperText Markup Language">HTML</abbr> - мова розмітки гіпертексту.</p>
+
+    <h2>Адреса:</h2>
+    <address>
+        Місто, Вулиця, Будинок<br>
+        Країна
+    </address>
+
+    <h2>Цитата про науковий досвід:</h2>
+    <p><cite>Наука - це організовані знання. Мудрість - це організований досвід.</cite></p>
+
+    <h2>Додаткові можливості форматування тексту:</h2>
+    <p><bdo dir="rtl">Привіт світ</bdo></p>
+</main>
+
+<footer>
+    &copy; 2024 Вадім корпоратіон. Усі права захищені. ю віл бі суед
+</footer>
+</body>
+</html>
