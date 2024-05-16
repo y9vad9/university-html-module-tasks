@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вадим Ярощук - Сторінка візитівки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="res/img/me.jpeg" width="150px" height="150px" alt="Моя фотографія">
+    <h1>Вадим Ярощук</h1>
+    <nav>
+        <ul>
+            <li><a href="#about" class="active">Про мене</a></li>
+            <li><a href="#contact">Контакти</a></li>
+            <li><a href="#projects">Проекти</a></li>
+            <li><a href="#publications">Публікації</a></li>
+            <li><a href="#music">Улюблена музика</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="section active">
+        <h2>Про мене</h2>
+        <p>Я Kotlin-інженер програмного забезпечення, що спеціалізується на клієнтсько-серверних додатках. Працював у
+            Ajax Systems, провідному виробнику бездротових систем безпеки в Європі з 2 мільйонами активних користувачів.
+            Мої головні напрямки - Kotlin, Java та PHP, але Kotlin є моєю основною мовою завдяки її універсальності.</p>
+
+        <p>Більшість моїх навичок були сформовані завдяки проєктам, які я ініціював, зокрема створенню Sketchcode,
+            локальної
+            соціальної мережі, призначеної для розробників без коду на Sketchware, яка нараховувала 5 000 активних
+            користувачів.
+            Окрім цього, я досліджував різноманітні технології, вивчаючи Kotlin/JS для моєї посадової сторінки та
+            експериментуючи з Kotlin/Native.</p>
+
+        <p>Мій поточний проект - TimeMates, інструмент, призначений допомагати користувачам організовувати свій час та
+            завдання. Він сприяє співпраці команд та відстеженню прогресу, вдихаючи життя в техніку Помодоро.
+            Розроблений з використанням Kotlin & Compose Multiplatform, RSocket (зі створеною мною системою RPC),
+            Coroutines та SQLDelight.</p>
+
+        <p style="margin-bottom: 50px">Окрім моєї технічної роботи, я дуже люблю спрощувати складнощі програмування. Я
+            надаю репетиторські послуги,
+            створюю курси, наставляю та пишу практичні статті про розробку на Kotlin. Я також великий шанувальник музики
+            і люблю досліджувати різні жанри. Люблю в основному рок та метал, але інші
+            жанри також слухаю!</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Контакти</h2>
+        <ul>
+            <li><a href="mailto:contact@y9vad9.com">Email: contact@y9vad9.com</a></li>
+            <li><a href="https://github.com/y9vad9">GitHub: @y9vad9</a></li>
+            <li><a href="https://t.me/y9vad9">Telegram: @y9vad9</a></li>
+            <li><a href="https://www.instagram.com/y9vad9/">Instagram: @y9vad9</a></li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Проєкти</h2>
+        <h3>Мої проєкти на GitHub</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/timemates/app">TimeMates</a> - Додаток для команд для менеджменту часу за
+                допомогою методики Помідора.
+            </li>
+            <li>
+                <a href="https://github.com/timemates/rsproto">RSProto</a> - Генератор з .proto файлів в RPC сервер /
+                клієнт на базі RSocket за аналогією з gRPC.
+            </li>
+            <li>
+                <a href="https://github.com/y9vad9/rsocket-kotlin-router">rsocket-kotlin-router</a> - Типобезпечна бібліотека
+                для будування роутера на базі RSocket.
+            </li>
+            <li>
+                <a href="https://courses.y9vad9.com">kotlin-course</a> - Котлін курс українською та англійською.
+            </li>
+            <li>
+                <a href="https://github.com/y9vad9/implier">implier</a> - KSP генератор для Kotlin, який генерує
+                мутабельні та іммутабельні декларації. Також вміє генерувати білдери та DTO.
+            </li>
+        </ul>
+    </section>
+
+    <section id="publications" class="section">
+        <h2>Публікації</h2>
+        <h3>Статті Dev.to</h3>
+        <ul class="publication-cards">
+            <li style="list-style: none">
+                <a href="https://dev.to/y9vad9/finding-the-right-balance-in-gradle-dependency-strategy-4jdl">
+                    <img src="https://y9vad9.com/images/gradle-dependency-management.webp" alt="Publication 1 preview">
+                    <h4>Пошук балансу в стратегії залежностей Gradle</h4>
+                </a>
+            </li>
+            <li style="list-style: none">
+                <a href="https://dev.to/y9vad9/gradle-from-newbie-to-strong-fundamentals-mdf">
+                    <img src="https://y9vad9.com/images/gradle-from-newbie-to-strong-fundamentals.webp"
+                         alt="Publication 2 preview">
+                    <h4>Gradle: від початківця до міцних основ</h4>
+                </a>
+            </li>
+            <li style="list-style: none">
+                <a href="https://dev.to/y9vad9/coroutines-are-not-just-about-concurrency-4bfe">
+                    <img src="https://y9vad9.com/images/coroutines-are-not-about-concurrency.webp"
+                         alt="Publication 3 preview">
+                    <h4>Kotlin корутини не тільки про багатопоточність</h4>
+                </a>
+            </li>
+            <li style="list-style: none">
+                <a href="https://dev.to/y9vad9/extension-oriented-design-3d41">
+                    <img src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fg22ym5tofjprndgo1mfw.png"
+                         alt="Publication 3 preview">
+                    <h4>Дизайн орієнтований на розширення в Kotlin</h4>
+                </a>
+            </li>
+        </ul>
+
+        <h3>Відео на YouTube</h3>
+        <iframe width="560" height="315" style="margin-bottom: 50px"
+                src="https://www.youtube.com/embed/7NTxuNKRfao?si=_ypQP3GIqj2ExM74"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="music" class="section">
+        <h2>Улюблена музика</h2>
+        <p>Я насолоджуюся широким спектром музичних жанрів, але ось деякі з моїх улюблених наразі:</p>
+        <ul>
+            <li>Rock</li>
+            <li>EDM</li>
+            <li>Акустика</li>
+        </ul>
+
+        <h3>Наприклад</h3>
+        <p>Ось дуже класна пісня від Burned Time Machine (українського виконавця):</p>
+        <audio controls>
+            <source width="100%" src="res/music/Dreamcore%20–%20Burned%20Time%20Machine.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Вадим Ярощук</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

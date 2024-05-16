@@ -1,0 +1,160 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex; 
+  min-height: 100vh; 
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+nav a.active {
+  background-color: #eee;
+}
+
+main {
+  padding: 50px;
+  flex-grow: 1; 
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.projects ul,
+.publications ul {
+  list-style: none !important; 
+  padding: 0;
+  margin-left: 20px;
+}
+
+.projects ul li,
+.publications ul li {
+  margin-bottom: 20px;
+}
+
+.project-cards,
+.publication-cards {
+  display: flex;
+  grid-template-columns: 1fr 2fr; 
+  gap: 15px;
+  
+  height: auto; 
+}
+
+.project-cards img,
+.publication-cards img {
+  width: 100%;
+  max-height: 250px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.project-cards .content,
+.publication-cards .content {
+  padding: 15px; 
+}
+
+.projects-container,
+.publications-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 15px; 
+  max-width: 100%; 
+  overflow: hidden; 
+}
+
+.project-card,
+.publication-card {
+  flex: 0 0 auto; 
+  
+  width: 350px; 
+  height: 250px; 
+  margin-bottom: 20px; 
+}
+
+footer {
+  margin-top: 1em;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed; 
+  bottom: 0;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
