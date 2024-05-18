@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклади Форм</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+<h1>Приклади Форм</h1>
+
+<form>
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Повідомлення:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit" class="submit-button">Відправити</button>
+</form>
+
+<form onsubmit="calculateSum(); return false;">
+    <label for="num1">Число 1:</label>
+    <input type="number" id="num1" name="num1" required>
+
+    <label for="num2">Число 2:</label>
+    <input type="number" id="num2" name="num2" required>
+
+    <button type="submit" class="submit-button">Обчислити суму</button>
+</form>
+
+<p id="result"></p>
+</body>
+</html>
