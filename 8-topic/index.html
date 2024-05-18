@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопки та Посилання</title>
+    <style>
+        .styled-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .genButton {
+            width: 200px;
+            height: 48px;
+            font-size: 20px;
+            color: #000000;
+            background: linear-gradient(to top right, #1dd862, #01af1b);
+            border: 2px solid #006c29;
+            border-radius: 10px;
+            font-family: arial;
+            transition: all 0.25s ease;
+        }
+        .genButton:hover {
+            color: #000000;
+            background: linear-gradient(to top right, #01af1b, #1dd862);
+            border-color: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Мої роботи</h1>
+<button class="styled-button" onclick="location.href='https://google.com'">Гугол</button>
+
+<h2>Кнопки з генератора</h2>
+<button class="genButton" onclick="location.href='https://google.com'">Гугол</button>
+</body>
+</html>
