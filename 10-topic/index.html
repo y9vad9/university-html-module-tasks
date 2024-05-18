@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анімація</title>
+    <style>
+        /* CSS Анімація */
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+
+        .animated-text {
+            font-size: 24px;
+            animation: move 4s linear infinite; /* Використовуємо створену анімацію */
+            color: blue;
+        }
+
+        /* Стилізація тексту у тегу marquee */
+        marquee {
+            font-size: 24px;
+            color: red; /* Червоний колір тексту */
+        }
+    </style>
+</head>
+<body>
+<h1>Анімація</h1>
+
+<p class="animated-text">Цей текст рухається горизонтально через css</p>
+
+<marquee behavior="scroll" direction="left">Цей текст рухається вліво (marquee)</marquee>
+<marquee behavior="scroll" direction="right">Цей текст рухається вправо (marquee)</marquee>
+
+</body>
+</html>
