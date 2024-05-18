@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стильна Таблиця</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .table-container {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            margin: 10px 0;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+<div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>Номер</th>
+            <th>Ім'я</th>
+            <th>Вік</th>
+            <th>Місто</th>
+            <th class="centered">Дія</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Олександр</td>
+            <td>25</td>
+            <td>Київ</td>
+            <td class="centered"><button class="btn">Редагувати</button></td>
+        </tr>
+        <tr class="highlight">
+            <td>2</td>
+            <td>Марія</td>
+            <td>30</td>
+            <td>Львів</td>
+            <td class="centered"><button class="btn">Редагувати</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Іван</td>
+            <td>28</td>
+            <td>Одеса</td>
+            <td class="centered"><button class="btn">Редагувати</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Наталія</td>
+            <td>22</td>
+            <td>Харків</td>
+            <td class="centered"><button class="btn">Редагувати</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
